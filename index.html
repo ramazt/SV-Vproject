@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jasmine-core@4.6.0/lib/jasmine-core/jasmine.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create New Account</h2>
+    <form id="createAccountForm" onsubmit="return handleSubmit()">
+      <input type="text" id="firstName" placeholder="First Name" required /><br />
+      <input type="text" id="lastName" placeholder="Last Name" required /><br />
+      <input type="email" id="email" placeholder="E-mail" required /><br />
+      <input type="password" id="password" placeholder="Password" required /><br />
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required /><br />
+      <input type="date" id="dob" required /><br />
+      <button type="submit">Submit</button>
+      <p id="errorMsg" class="error"></p>
+      <p id="successMsg" class="success"></p>
+    </form>
+  </div>
+
+  <script src="validation.js"></script>
+  <script src="spec.js"></script>
+</body>
+</html>
